@@ -7,57 +7,54 @@ int main()
 	Game game( "Soccer" );
 
 	// define players
-	Player edo( "Edo", 'A' );
 	Player bene( "Bene", 'A' );
-	Player hendry( "Hendry", 'C' );
-	Player chris( "Chris", 'A' );
-	Player timmy( "Timmy", 'B' );
-	
-	Player johan( "Johan", 'C' );
-	Player david( "David", 'A' );
-	Player waldorf( "Waldorf", 'C' );
-	Player jordy( "Jordy", 'B' );
-	Player ocep( "Ocep", 'B' );
-	Player madison( "Madison", 'C' );
 	Player billy( "Billy", 'B' );
-	
-	Player mengkhun( "Meng Khun", 'B' );
-	Player wiryadi( "Wiryadi", 'D' );
-	Player timo( "Timotius", 'B' );
-	Player randy( "Randy", 'D' );
-	Player marcel( "Marcel", 'D' );
-	Player norman( "Norman", 'C' );
-	
-	Player maria( "Maria", 'D' );
-	Player yuchi( "Yuchi", 'D');
-	Player omJohn( "Om John", 'D' );
-	Player vincent( "Vincent", 'C');
 	Player chienhui( "Chien Hui", 'D');
+	Player chris( "Chris", 'A' );
+	Player david( "David", 'A' );
+	Player edo( "Edo", 'A' );
+	Player hendry( "Hendry", 'C' );
+	Player johan( "Johan", 'C' );
+	Player jordy( "Jordy", 'B' );
+	Player madison( "Madison", 'C' );
+	Player marcel( "Marcel", 'D' );
+	Player maria( "Maria", 'D' );
+	Player mengkhun( "Meng Khun", 'B' );
+	Player norman( "Norman", 'C' );
+	Player ocep( "Ocep", 'B' );
+	Player omJohn( "Om John", 'D' );
+	Player randy( "Randy", 'D' );
+	Player timmy( "Timmy", 'B' );
+	Player timo( "Timotius", 'B' );
+	Player waldorf( "Waldorf", 'C' );
+	Player vincent( "Vincent", 'C');
+	Player wiryadi( "Wiryadi", 'D' );
+	Player yuchi( "Yuchi", 'D');
 	
 	// put players into list
+	game.list.push_back( bene );
+	game.list.push_back( billy );
+	//game.list.push_back( chienhui );
+	//game.list.push_back( chris );
+	game.list.push_back( david );
 	game.list.push_back( edo );
 	game.list.push_back( hendry );
-	game.list.push_back( bene );
-	//game.list.push_back( chris );
-	game.list.push_back( timmy );
 	game.list.push_back( johan );
-	game.list.push_back( david );
 	//game.list.push_back( jordy );
-	game.list.push_back( waldorf );
-	game.list.push_back( ocep );
 	//game.list.push_back( madison );
-	game.list.push_back( billy );
-	game.list.push_back( mengkhun );
-	game.list.push_back( wiryadi );
-	//game.list.push_back( timo );
-	game.list.push_back( randy );
 	game.list.push_back( marcel );
-	game.list.push_back( norman );
 	//game.list.push_back( maria );
-	game.list.push_back( yuchi );
+	game.list.push_back( mengkhun );
+	game.list.push_back( norman );
+	game.list.push_back( ocep );
 	game.list.push_back( omJohn );
+	game.list.push_back( randy );
+	game.list.push_back( timmy );
+	//game.list.push_back( timo );
+	game.list.push_back( waldorf );
 	game.list.push_back( vincent );
-	//game.list.push_back( chienhui );
+	game.list.push_back( wiryadi );
+	game.list.push_back( yuchi );
 
 	bool exit = false;
 	int input = 0;
